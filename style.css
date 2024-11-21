@@ -1,0 +1,373 @@
+.nav{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+    margin: 0px 50px;
+    position: sticky;
+    top:0px;
+    background: white;
+    z-index: 5;
+    
+}
+.logo{
+    width:100%;
+    height:100%;
+    margin:10px 20px;
+    
+}
+.nav1{
+    width:40%;
+}
+.nav2{
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+    align-items: center;
+    background: rgba(255, 255, 255,1);
+
+}
+div a{
+    text-decoration:none;
+    height: fit-content;
+}
+div a:hover{
+    color:green;
+    text-decoration:none;
+}
+.headiv{
+    display: flex;
+    margin:0px 50px;
+    width:100%;
+    height:25%;
+}
+.headiv h1{
+    height:100%;
+    width:100%;
+    font-weight:600;
+    font-family: "Roboto Slab", serif;
+    font-size: 150px;
+    
+}
+.imgdiv{
+    display: flex;
+    flex-basis: 50%;
+    margin:50px 100px;
+    height: fit-content;
+    justify-content: space-between;
+}
+.imgdiv .sub-img-div1{
+    width:100%;
+}
+ .sub-img-div1 img{
+    width:100%;
+    border-radius: 10px;
+    transition: 0.5s ease;
+} 
+.sub-img-div1 img:hover{
+    scale:1.05;
+    transition: 0.5s ease;
+    box-shadow: 0px 0px 10px  black;
+
+}
+.imgdiv .isub-img-div2{
+    width:100%;
+    background: #ffffff;
+    
+}
+.sub-img-div2{
+    margin: 0px 0px 0px 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.sub-img-div2 p{
+    margin-top: 50px;
+}
+
+.sub-img-div2 a{
+    border-radius: 20px;
+    opacity: 0.7;
+    scale: 80%;
+    color: blue;
+    font-weight: 600;
+    background-color: palegreen;
+}
+.sub-img-div2 a:hover{
+    background-color: palegreen;
+    color: blue;
+}
+#a{
+    border-radius: 20px;
+    background-color: palegreen;
+    border-color: white;
+    color: black;
+}
+#a:hover,.sub-img-div2 a:hover{
+    color:white;
+    background-color: hwb(120 10% 17%);
+}
+.sub-img-div2 .seemore{
+    color: rgb(9, 93, 9);
+    background: transparent;
+    height:fit-content
+}
+.sub-img-div2 .seemore:hover{
+    color: rgb(9, 93, 9);
+    background: transparent;
+}
+.sid12 {
+   margin-top: 5px;;
+    padding:15px;
+    border-radius: 20px;
+    
+}
+.sid12 .a{
+    border-radius: 20px;
+    font-size: larger;
+    scale: 80%;
+    font-weight: bold;
+    text-shadow:0px 0px 5px rgb(6, 0, 0);
+    
+}
+.sid12 .a:hover{
+    text-shadow:0px 0px 5px rgba(255, 255, 255,1);
+}
+.sid12 p{
+    margin-top: 30px;
+    font-weight: 500;
+}
+#sm{
+    color: rgb(72, 197, 72);
+    background: transparent;
+    text-shadow:none;
+    opacity: 0.7;
+}
+
+.sub-img-div2 img{
+    width:100%;
+    border-radius: 20px;
+    transition: 0.5s ease;
+}
+.sub-img-div2 img:hover{
+    scale:1.05;
+    transition: 0.5s ease;
+    box-shadow: 0px 0px 10px  black;
+}
+.sub-img-div2 .btn-primary{
+    
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    background-color: rgb(0, 38, 255);
+    
+    scale:1.05;
+    text-shadow:0px 0px 5px rgb(0, 0, 0);
+
+}
+.sub-img-div2 .btn-primary:hover{
+    background-color: rgb(0, 37, 246);
+    color: rgb(255, 255, 255);
+    text-shadow:0px 0px 5px rgba(255, 255, 255,1);
+
+}
+
+
+/* Smartphones in portrait mode */
+@media (min-width: 342px) and (max-width: 480px){ 
+.nav{
+    position: static;
+    margin:10px;
+}
+.nav a{
+   display:none; 
+}
+.headiv h1{
+    font-weight:200;
+    font-family: "Roboto Slab", serif;
+    font-size: 50px;
+}
+.headiv{
+    height: fit-content;
+    justify-content: start;
+    margin:10px;
+}
+.imgdiv{
+    margin:10px;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+}
+.sid12 .h1{
+    font-size: 20px;
+}
+.sub-img-div2{
+    
+    margin: 0px;
+    flex-wrap: wrap;
+    width:100%
+}
+.sub-img-div2 h1{
+    font-size: 20px;
+    margin: 10px 10px;
+}
+
+.sub-img-div2 p{
+    font-size: 20px;
+    margin: 10px 10px;
+}
+.java{
+    z-index: 2;
+    margin:10px  10px;
+   width:100vw;
+}
+.java pre{
+    font-size: 20px;
+    text-wrap:pretty;
+}
+span img{
+   scale:1;
+}
+
+
+}
+@media (min-width: 481px) and (max-width: 767px) {
+    .nav{
+        position: static;
+        margin:10px;
+    }
+    .nav a{
+       display:none; 
+    }
+    .headiv{
+        height: fit-content;
+    }
+    .headiv h1{
+        font-weight:3000;
+        font-family: "Roboto Slab", serif;
+        font-size: 80px;
+    }
+    .imgdiv{
+        margin:10px;
+        flex-basis: 100%;
+        flex-wrap: wrap;
+    }
+    .sid12 .h1{
+        font-size: 30px;
+    }
+    .sid12 .btn-primary{
+        width:50%;
+        height:5%;
+        place-content: center;
+    }
+    .sub-img-div2{
+        
+        margin: 30px 0px;
+        flex-wrap: wrap;
+        width:100%
+    }
+    .sub-img-div2 h1{
+        font-size: 40px;
+        margin: 10px 10px;
+    }
+    
+    .sub-img-div2 p{
+        font-size: 40px;
+        margin: 10px 10px;
+    }
+    .sub-img-div2 .btn{
+            width:40%;
+            height:4%;
+            place-content: center;
+    }
+    .java{
+        z-index: 2;
+        margin:10px  10px;
+        width:100vw;
+    }
+.java .btn-primary{
+    width:40%;
+    height:8%;
+    place-content: center;
+}
+    .java pre{
+        font-size: 40px;
+        text-wrap:pretty;
+    }
+    span img{
+       scale:1;
+    }
+    span .seemore , span i{
+        font-size: 40px !important;
+    }
+}
+/* Tablets in portrait mode*/
+@media (min-width: 768px) and (max-width: 1024px){ 
+    .nav{
+        position: static;
+        margin:10px;
+    }
+    .nav a{
+       display:none; 
+    }
+    .headiv{
+        height: fit-content;
+    }
+    .headiv h1{
+        font-weight:3000;
+        font-family: "Roboto Slab", serif;
+        font-size: 100px;
+    }
+    .imgdiv{
+        margin:10px;
+        flex-basis: 100%;
+        flex-wrap: wrap;
+    }
+    .sid12 .h1{
+        font-size: 40px;
+    }
+    .sid12 .btn-primary{
+        width:40%;
+        height:5%;
+        place-content: center;
+    }
+    .sub-img-div2{
+        
+        margin: 30px 0px;
+        flex-wrap: wrap;
+        width:100%
+    }
+    .sub-img-div2 h1{
+        font-size: 40px;
+        margin: 10px 10px;
+    }
+    
+    .sub-img-div2 p{
+        font-size: 40px;
+        margin: 10px 10px;
+    }
+    .sub-img-div2 .btn{
+            width:30%;
+            height:4%;
+            place-content: center;
+    }
+    .java{
+        z-index: 2;
+        margin:10px  10px;
+        width:100vw;
+    }
+.java .btn-primary{
+    width:30%;
+    height:10%;
+    place-content: center;
+}
+    .java pre{
+        font-size: 40px;
+        text-wrap:pretty;
+    }
+    span img{
+       scale:1;
+    }
+    span .seemore , span i{
+        font-size: 40px !important;
+    }
+}
+
