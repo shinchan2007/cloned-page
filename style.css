@@ -239,6 +239,7 @@ span img{
     }
     .headiv{
         height: fit-content;
+        margin: 0px;
     }
     .headiv h1{
         font-weight:3000;
@@ -254,7 +255,7 @@ span img{
         font-size: 30px;
     }
     .sid12 .btn-primary{
-        width:50%;
+        width:fit-content;
         height:5%;
         place-content: center;
     }
@@ -274,8 +275,8 @@ span img{
         margin: 10px 10px;
     }
     .sub-img-div2 .btn{
-            width:40%;
-            height:4%;
+            width:fit-content;
+            height:auto;
             place-content: center;
     }
     .java{
