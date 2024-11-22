@@ -175,7 +175,7 @@ div a:hover{
 }
 .java{
     margin-top: 5px;
-    background-color: rgb(242, 179, 103);
+    background-color: rgb(242, 188, 121);
     color:white;
     padding:15px;
     border-radius: 20px;
@@ -238,6 +238,7 @@ div a:hover{
     z-index: 2;
     margin:10px  10px;
    width:100vw;
+     background-color: rgb(242, 188, 121);
 }
 .java pre{
     font-size: 20px;
@@ -303,6 +304,7 @@ span img{
         z-index: 2;
         margin:10px  10px;
         width:100vw;
+         background-color: rgb(242, 188, 121);
     }
 .java .btn-primary{
     width:40%;
@@ -374,6 +376,7 @@ span img{
         z-index: 2;
         margin:10px  10px;
         width:100vw;
+         background-color: rgb(242, 188, 121);
     }
 .java .btn-primary{
     width:30%;
