@@ -13,6 +13,10 @@
     z-index: 5;
     
 }
+.nav i{
+    font-size:36px;
+    display:none;
+}
 .logo{
     width:100%;
     height:100%;
@@ -194,11 +198,21 @@ div a:hover{
 
 /* Smartphones in portrait mode */
 @media (min-width: 342px) and (max-width: 480px){ 
+.nav i{
+    display: inline !important;
+    margin:10px
+}
 .nav{
     position: static;
     margin:10px;
+   
 }
-.nav a{
+.navnanba{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav2{
    display:none; 
 }
 .headiv h1{
@@ -251,13 +265,26 @@ span img{
 
 }
 @media (min-width: 481px) and (max-width: 767px) {
+    .navnanba{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width:100vw;
+        margin: 20px;
+    }
+    .nav i{
+       
+        display: block !important;
+        margin:10px;
+    }
     .nav{
         position: static;
         margin:10px;
+        height: fit-content;
     }
-    .nav a{
-       display:none; 
-    }
+    .nav2{
+        display:none; 
+     }
     .headiv{
         height: fit-content;
         margin: 0px;
@@ -324,13 +351,26 @@ span img{
 }
 /* Tablets in portrait mode*/
 @media (min-width: 768px) and (max-width: 1024px){ 
+    .navnanba{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width:100vw;
+        margin: 20px;
+    }
+    .nav i{
+       
+        display: block !important;
+        margin:10px;
+    }
     .nav{
+        height: fit-content;
         position: static;
         margin:10px;
     }
-    .nav a{
-       display:none; 
-    }
+    .nav2{
+        display:none; 
+     }
     .headiv{
         height: fit-content;
     }
@@ -394,4 +434,71 @@ span img{
         font-size: 40px !important;
     }
 }
-
+@media (max-width:481px) {
+    .navnanba{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width:100vw;
+        margin: 20px;
+    }
+    .nav i{
+       
+        display: block !important;
+        margin:10px;
+    }
+    .nav{
+        width:100vw;
+        margin:10px;
+    }
+    .nav2{
+        display:none; 
+     }
+    .headiv h1{
+        font-weight:200;
+        font-family: "Roboto Slab", serif;
+        font-size: 50px;
+    }
+    .headiv{
+        height: fit-content;
+        justify-content: start;
+        margin:10px;
+    }
+    .imgdiv{
+        margin:10px;
+        flex-basis: 100%;
+        flex-wrap: wrap;
+    }
+    .sid12 .h1{
+        font-size: 20px;
+    }
+    .sub-img-div2{
+        
+        margin: 0px;
+        flex-wrap: wrap;
+        width:100%
+    }
+    .sub-img-div2 h1{
+        font-size: 20px;
+        margin: 10px 10px;
+    }
+    
+    .sub-img-div2 p{
+        font-size: 20px;
+        margin: 10px 10px;
+    }
+    .java{
+        z-index: 2;
+        margin:10px  10px;
+       width:100vw;
+         background-color: rgb(242, 188, 121);
+    }
+    .java pre{
+        font-size: 20px;
+        text-wrap:pretty;
+    }
+    span img{
+       scale:1;
+    }
+    
+}
