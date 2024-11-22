@@ -1,3 +1,6 @@
+*{
+    cursor:context-menu;
+}
 .nav{
     display: flex;
     justify-content: space-between;
@@ -170,7 +173,24 @@ div a:hover{
     text-shadow:0px 0px 5px rgba(255, 255, 255,1);
 
 }
-
+.java{
+    margin-top: 5px;
+    background-color: rgb(242, 179, 103);
+    color:white;
+    padding:15px;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap; 
+}
+.java .btn-primary{
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    background-color: rgb(0, 38, 255);
+    scale:1.05;
+    text-shadow:0px 0px 5px rgb(0, 0, 0);
+    box-shadow: 0px 0px 5px black;
+}
 
 /* Smartphones in portrait mode */
 @media (min-width: 342px) and (max-width: 480px){ 
