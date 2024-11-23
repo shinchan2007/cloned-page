@@ -2,6 +2,31 @@
     cursor:context-menu;
 }
 .nav{
+    width:100%;
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+}
+.nav img{
+    height: fit-content;
+    width:15%;
+    margin: 1rem;
+}
+ul{
+    list-style:none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+li{
+    display:inline-block;
+    margin: 1.5rem;
+    cursor: pointer;
+}
+li:hover{
+    color:rgb(62, 248, 62);
+}
+/* .nav{
     display: flex;
     justify-content: space-between;
     height: 100px;
@@ -11,6 +36,7 @@
     top:0px;
     background: white;
     z-index: 5;
+    width:100%;
     
 }
 .logo{
@@ -18,8 +44,8 @@
     height:100%;
     margin:10px 20px;
     
-}
-.nav1{
+} */
+/* .nav1{
     width:40%;
 }
 .nav2{
@@ -29,7 +55,7 @@
     align-items: center;
     background: rgba(255, 255, 255,1);
 
-}
+} */
 div a{
     text-decoration:none;
     height: fit-content;
@@ -71,6 +97,15 @@ div a:hover{
     scale:1.05;
     transition: 0.5s ease;
     box-shadow: 0px 0px 10px  black;
+
+}
+i{
+    transform: rotate(0deg);
+    transition: 0.5s ease;
+}
+i:hover{
+    transform: rotate(180deg);
+    transition: 0.5s ease;
 
 }
 .imgdiv .isub-img-div2{
@@ -191,16 +226,100 @@ div a:hover{
     text-shadow:0px 0px 5px rgb(0, 0, 0);
     box-shadow: 0px 0px 5px black;
 }
-
+/* Smartphones in portrait mode */
+@media (max-width: 342px){ 
+    .nav{
+        height: fit-content;
+    }
+    #bar{
+        display: flex !important;
+        font-size: 2rem;
+    }
+    #bar:hover{
+        color:rgb(0, 0, 0)
+    }
+    .nav ul li{
+       display:none !important; 
+    }
+    .headiv h1{
+        font-weight:200;
+        font-family: "Roboto Slab", serif;
+        font-size: 50px;
+    }
+    .headiv{
+        height: fit-content;
+        justify-content: start;
+        margin:10px;
+    }
+    .imgdiv{
+        margin:10px;
+        flex-basis: 100%;
+        flex-wrap: wrap;
+    }
+    .sid12 .h1{
+        font-size: 20px;
+    }
+    .sub-img-div2{
+        
+        margin: 0px;
+        flex-wrap: wrap;
+        width:100%
+    }
+    .sub-img-div2 h1{
+        font-size: 20px;
+        margin: 10px 10px;
+    }
+    
+    .sub-img-div2 p{
+        font-size: 20px;
+        margin: 10px 10px;
+    }
+    .java{
+        z-index: 2;
+        margin:10px  10px;
+       width:100vw;
+         background-color: rgb(242, 188, 121);
+    }
+    .java pre{
+        font-size: 20px;
+        text-wrap:pretty;
+    }
+    span img{
+       scale:1;
+    }
+}
+    
 /* Smartphones in portrait mode */
 @media (min-width: 342px) and (max-width: 480px){ 
+    .nav img{
+        width:5rem;
+    }
+    .nav{
+        height: fit-content;
+    }
+    #bar{
+        display: flex !important;
+        font-size: 2rem;
+    }
+    #bar:hover{
+        color:rgb(0, 0, 0)
+    }
+    .nav ul li{
+       display:none !important; 
+    }
+    /* .nav i{
+        display:contents !important;
+        float: left;
+    }
 .nav{
     position: static;
     margin:10px;
+    display: flex;
+    justify-content: space-between
 }
-.nav a{
+.nav2{
    display:none; 
-}
+} */
 .headiv h1{
     font-weight:200;
     font-family: "Roboto Slab", serif;
@@ -252,12 +371,25 @@ span img{
 }
 @media (min-width: 481px) and (max-width: 767px) {
     .nav{
+        height: fit-content;
+    }
+    #bar{
+        display: flex !important;
+        font-size: 2rem;
+    }
+    #bar:hover{
+        color:rgb(0, 0, 0)
+    }
+    .nav ul li{
+       display:none !important; 
+    }
+    /* .nav{
         position: static;
         margin:10px;
     }
     .nav a{
        display:none; 
-    }
+    } */
     .headiv{
         height: fit-content;
         margin: 0px;
@@ -323,14 +455,28 @@ span img{
     }
 }
 /* Tablets in portrait mode*/
-@media (min-width: 768px) and (max-width: 1024px){ 
+@media (min-width: 767px) and (max-width: 1024px){ 
     .nav{
+        height: fit-content;
+    }
+    #bar{
+        display: flex !important;
+        font-size: 3rem;
+    }
+    #bar:hover{
+        color:rgb(0, 0, 0)
+    }
+    .nav ul li{
+       display:none !important; 
+    }
+    /* .nav{
+    
         position: static;
         margin:10px;
     }
     .nav a{
        display:none; 
-    }
+    } */
     .headiv{
         height: fit-content;
     }
